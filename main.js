@@ -1,0 +1,16 @@
+const s = require(`./stack.js`)
+
+const stack = new s.Stack()
+
+stack.print()
+stack.push({ i: 4, d: "hello" })
+stack.print()
+stack.push(4)
+stack.print()
+stack.push(null)
+stack.print()
+console.log(stack.pop())
+stack.print()
+let thing = stack.pop()
+console.log(thing)
+stack.print()
